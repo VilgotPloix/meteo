@@ -59,47 +59,7 @@
 .fleche
 {
     width: 70px;
-    transition: all 1s ease-in-out;
-}
-
-.fleche.N
-{
-    transform: rotate(-90deg);
-}
-
-.fleche.S
-{
-    transform: rotate(90deg);
-}
-
-.fleche.W
-{
-    transform: rotate(180deg);
-}
-
-.fleche.NE
-{
-    transform: rotate(-45deg);
-}
-
-.fleche.NW
-{
-    transform: rotate(-135deg);
-}
-
-.fleche.SW
-{
-    transform: rotate(135deg);
-}
-
-.fleche.SSW
-{
-    transform: rotate(120deg);
-}
-
-.fleche.SE
-{
-    transform: rotate(45deg);
+    transition: 1s all ease-in-out;
 }
 
 .cadre

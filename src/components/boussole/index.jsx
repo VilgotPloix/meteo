@@ -4,6 +4,8 @@ import './style.css'
 
 export default function Boussole(props) {
 
+    let direction = props.children.wind_dir - 90;
+
     return (
         <div id='boussole'>
             <div className='rond'>
@@ -11,7 +13,9 @@ export default function Boussole(props) {
                 <p id="sud">S</p>
                 <p id="est">E</p>
                 <p id="west">W</p>
-                <div className="cadre"><img src={fleche} alt="blabla" className={"fleche " + props.children.wind_cdir}/></div>
+                <div className="cadre"><img src={fleche} alt="blabla" className="fleche"
+                    style={{transform: `rotate(${direction}deg)`}}
+                /></div>
             </div>
             <p id='speedometer'>~{parseInt(props.children.wind_spd * 3.6)}km/h</p>
         </div>
