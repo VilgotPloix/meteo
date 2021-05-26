@@ -1,0 +1,119 @@
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+#boussole
+{
+    width: 150px;
+    position: relative;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.rond
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    position: relative;
+}
+
+.rond p 
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+#nord
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#sud
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
+}
+
+#est
+{
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 16px;
+}
+
+#west
+{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 0px;
+    margin: 16px;
+}
+
+.fleche
+{
+    width: 70px;
+    transition: all 1s ease-in-out;
+}
+
+.fleche.N
+{
+    transform: rotate(-90deg);
+}
+
+.fleche.S
+{
+    transform: rotate(90deg);
+}
+
+.fleche.W
+{
+    transform: rotate(180deg);
+}
+
+.fleche.NE
+{
+    transform: rotate(-45deg);
+}
+
+.fleche.NW
+{
+    transform: rotate(-135deg);
+}
+
+.fleche.SW
+{
+    transform: rotate(135deg);
+}
+
+.fleche.SSW
+{
+    transform: rotate(120deg);
+}
+
+.fleche.SE
+{
+    transform: rotate(45deg);
+}
+
+.cadre
+{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#speedometer
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
